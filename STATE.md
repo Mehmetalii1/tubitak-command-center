@@ -2,7 +2,7 @@
 
 ## Current Phase
 
-Phase 1A - readiness / scientific preparation planning
+Phase 1A - readiness / scientific preparation planning (now formally defined in ROADMAP.md and governance/PHASE_EXIT_CRITERIA.md)
 
 ## Repository Role
 
@@ -15,6 +15,7 @@ It does not yet implement the scientific pipeline.
 ## Current Status
 
 - Command Center setup: closed by initial Phase 0 commit
+- Phase 1A: formally defined in ROADMAP.md and governance/PHASE_EXIT_CRITERIA.md, including a decision-stall rule for blocked/uncertain count items
 - Scientific pipeline: Not started
 - Learning gates: Created, all Not started, none Passed
 - Experiment tracking: Header-only scaffold
