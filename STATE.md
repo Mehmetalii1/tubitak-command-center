@@ -27,12 +27,13 @@ It does not yet implement the scientific pipeline.
 - Decision discussion readiness: NP-MRD and NMRShiftDB2 noted as ready for discussion; HMDB noted as fallback/comparison candidate needing one more experimental/predicted 13C check
 - Data source decision discussion: prepared in ADR 0001 for NP-MRD vs NMRShiftDB2; no source selected
 - Remaining data source verification checklist: prepared in ADR 0001 as a pre-selection plan only; no source selected
+- Must-answer evidence collection plan: prepared in ADR 0001; no evidence collected, no counts confirmed, and no source selected
 - Data downloaded: No
 - Raw data changed beyond README: No
 
 ## Next Step
 
-Use the remaining data source verification checklist to answer the must-answer items before any source selection.
+Use the must-answer evidence collection plan; first target is the NP-MRD usable experimental 1D 13C subset count verification method, without downloading data or selecting a source.
 
 ## Pending User Decisions
 
