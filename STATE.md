@@ -22,12 +22,13 @@ It does not yet implement the scientific pipeline.
 - Literature: Placeholder only
 - ADRs: proposed placeholders only
 - Data source ADR: Proposed, enriched with working assumptions
+- Data source candidate research: integrated into repo memory; shortlist recorded for further verification only
 - Data downloaded: No
 - Raw data changed beyond README: No
 
 ## Next Step
 
-Plan a candidate data source comparison table without downloading data.
+Plan a focused verification pass for NP-MRD, NMRShiftDB2, and HMDB without downloading data.
 
 ## Pending User Decisions
 

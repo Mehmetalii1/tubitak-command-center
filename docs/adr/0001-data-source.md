@@ -41,6 +41,22 @@ During Phase 1A, this ADR records working assumptions only. It does not select a
 - Can functional group labels be derived consistently from the available structure representation?
 - Is the source large enough for meaningful per-class evaluation after label filtering?
 
+## Candidate Research Summary
+
+Phase 1A concrete candidate research has been recorded in `literature/SOURCES.md` and `literature/CLAIMS.md`.
+
+No data source has been selected.
+
+This ADR remains `Proposed`.
+
+The current shortlist is only a recommendation for further verification, not a decision:
+
+- NP-MRD
+- NMRShiftDB2
+- HMDB
+
+The shortlist is based on currently available evidence about 13C NMR relevance, molecular structure availability, license/reuse clarity, reproducibility, and scaffold-aware evaluation suitability. Each candidate still has unresolved verification questions before any source can be approved.
+
 ## Decision
 
 Pending Mehmetali approval. No specific source is selected.

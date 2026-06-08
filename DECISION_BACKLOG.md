@@ -6,7 +6,7 @@ A decision listed here is not yet accepted.
 
 ## Pending Scientific Decisions
 
-- Data source (pending; working assumptions drafted in ADR 0001; final decision not approved)
+- Data source (pending; working assumptions drafted in ADR 0001; candidate research completed; shortlist proposed for further verification; final decision not approved)
 - Label set definition
 - 13C NMR representation strategy
 - Feature extraction strategy
