@@ -2,7 +2,7 @@
 
 ## Current Phase
 
-Phase 0 — Command Center setup finalization
+Phase 1A - readiness / scientific preparation planning
 
 ## Repository Role
 
@@ -14,17 +14,20 @@ It does not yet implement the scientific pipeline.
 
 ## Current Status
 
-- Command Center setup: finalization
+- Command Center setup: closed by initial Phase 0 commit
 - Scientific pipeline: Not started
 - Learning gates: Created, all Not started, none Passed
 - Experiment tracking: Header-only scaffold
 - Proposal: Draft placeholders only
 - Literature: Placeholder only
 - ADRs: proposed placeholders only
+- Data source ADR: Proposed, enriched with working assumptions
+- Data downloaded: No
+- Raw data changed beyond README: No
 
 ## Next Step
 
-Phase 0 final closure audit, then choose first learning gate later.
+Plan a candidate data source comparison table without downloading data.
 
 ## Pending User Decisions
 
