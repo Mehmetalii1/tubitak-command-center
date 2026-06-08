@@ -16,11 +16,13 @@ This repository manages:
 - Codex session protocol
 - audits and governance
 
-Initial setup does not implement the scientific model.
+Phase 0 setup is closed. The current phase is Phase 1A; see `STATE.md`.
+
+Phase 1A still does not implement the scientific model or scientific pipeline.
 
 ## Test
 
-Run setup-safe tests locally with:
+Run repository safety tests locally with:
 
 ```bash
 python -m pytest -q

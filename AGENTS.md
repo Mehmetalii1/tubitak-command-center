@@ -18,7 +18,7 @@ This repository is the Command Center for the TUBITAK 2209-A 13C NMR functional 
 
 It supervises project memory, task discipline, learning gates, evidence, proposal structure, and audits.
 
-It does not execute the scientific experiment during initial setup.
+Phase 0 setup is closed. During Phase 1A, it still does not execute the scientific experiment.
 
 ## Required Session Start
 
@@ -33,7 +33,7 @@ It does not execute the scientific experiment during initial setup.
 ## Core Rules
 
 - Do not modify `data/raw/`.
-- Do not implement scientific model code during setup.
+- Do not implement scientific model code during Phase 1A without explicit approval.
 - Do not mark knowledge gates as passed without Mehmetali's evidence.
 - Do not mark scientific ADRs as accepted without approval.
 - Do not invent citations.

@@ -11,8 +11,8 @@ These are non-negotiable project invariants.
 
 ## Repository Core
 
-- This repository is a Command Center during Phase 0.
-- It does not implement the scientific pipeline during setup.
+- Phase 0 setup is closed; this repository remains a Command Center during Phase 1A.
+- It does not implement the scientific pipeline during Phase 1A without explicit approval.
 - It manages memory, planning, learning, evidence, proposal scaffolding, and audits.
 
 ## Responsibility Core
@@ -27,4 +27,3 @@ These are non-negotiable project invariants.
 - Do not invent citations.
 - Do not mark gates as passed without evidence.
 - Do not report fake experiment results.
-

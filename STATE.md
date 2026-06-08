@@ -16,6 +16,7 @@ It does not yet implement the scientific pipeline.
 
 - Command Center setup: closed by initial Phase 0 commit
 - Phase 1A: formally defined in ROADMAP.md and governance/PHASE_EXIT_CRITERIA.md, including a decision-stall rule for blocked/uncertain count items
+- Phase 0 no-go and setup boundaries remain active during Phase 1A unless Mehmetali explicitly approves a later scientific task
 - Scientific pipeline: Not started
 - Learning gates: Created, all Not started, none Passed
 - Experiment tracking: Header-only scaffold

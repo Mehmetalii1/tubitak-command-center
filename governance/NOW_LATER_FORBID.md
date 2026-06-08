@@ -1,11 +1,12 @@
 # NOW_LATER_FORBID.md
 
-## NOW - Phase 0
+## NOW - Phase 1A
 
 - Maintain the Command Center skeleton.
 - Keep memory, governance, learning, audit, proposal, and literature scaffolds clear.
-- Run setup-safe tests.
+- Run repository safety tests.
 - Preserve phase boundaries.
+- Preserve Phase 0 no-go boundaries unless Mehmetali explicitly approves a later scientific task.
 
 ## LATER - Requires Approval
 
@@ -18,7 +19,7 @@
 - Proposal drafting beyond placeholders
 - GitHub Issues, labels, and milestones
 
-## DO NOT TOUCH IN SETUP
+## DO NOT TOUCH IN PHASE 1A WITHOUT APPROVAL
 
 - Do not write model code.
 - Do not download data.
@@ -30,4 +31,3 @@
 - Do not invent citations.
 - Do not write final TUBITAK proposal language.
 - Do not create dashboards, vector databases, MLflow/W&B integration, or autonomous agents.
-
