@@ -36,3 +36,10 @@ Why: the ADR had become the repo's largest single-file drift risk and an "append
 Boundary: content moved unchanged; no source selected; ADR stays Proposed; no ADR Accepted.
 Reversible: Yes (content is preserved and tracked in git).
 
+### 2026-06-08 - Frame the two open data-source decisions (neutral)
+
+Decision: `docs/decisions/data-source/DECISION_NOTE.md` frames, neutrally and on one page, the two real decisions between the project and a source choice: (A) whether the NMRShiftDB2 license is acceptable, and (B) the NP-MRD vs NMRShiftDB2 narrative/scope preference. It organizes existing evidence only.
+Why: the audit found that what is missing is a decision, not more evidence; this note brings the two blockers to a single readable place without making the call.
+Boundary: neutral framing only - no new evidence, no recommendation, no source selection, no license judgment; both decisions are pending Mehmetali; ADR 0001 stays Proposed.
+Reversible: Yes.
+

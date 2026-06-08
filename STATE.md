@@ -24,6 +24,7 @@ It does not yet implement the scientific pipeline.
 - ADRs: Proposed only; none Accepted
 - Data source ADR: Proposed, slimmed to template shape (Status / Context / working assumptions / criteria / open questions / Decision / Consequences / Review Trigger); still Proposed, no source selected
 - Data source evidence/discussion notes: relocated verbatim from ADR 0001 to docs/decisions/data-source/ (candidate-research, verification-and-evidence, advisor-discussion); content unchanged, location centralized
+- Data source open decisions: framed neutrally in docs/decisions/data-source/DECISION_NOTE.md (NMRShiftDB2 license yes/no; NP-MRD vs NMRShiftDB2 narrative/scope); both pending Mehmetali; no source selected
 - Data source candidate research: integrated into repo memory; shortlist recorded for further verification only
 - Data source focused verification: completed for NP-MRD, NMRShiftDB2, and HMDB; no source selected
 - Decision discussion readiness: NP-MRD and NMRShiftDB2 noted as ready for discussion; HMDB noted as fallback/comparison candidate needing one more experimental/predicted 13C check
