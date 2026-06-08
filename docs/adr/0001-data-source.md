@@ -196,6 +196,50 @@ The first verification target is the NP-MRD usable experimental 1D 13C subset co
 - forbidden method: Write that NP-MRD should be selected, write that NMRShiftDB2 should be selected, rank the candidates as a final choice, accept the ADR, or mark any must-answer item as resolved without evidence.
 - expected output: A future pre-selection readiness note that lists statuses and remaining caveats only; HMDB remains fallback/comparison and is not treated as a main contender unless a later fallback task is approved.
 
+## NP-MRD Subset Count Evidence Note
+
+Prepared on 2026-06-08. Sources accessed on 2026-06-08.
+
+This note addresses only how well official or primary NP-MRD sources support the NP-MRD structure-linked usable experimental 1D 13C subset count question. It does not select NP-MRD, accept this ADR, authorize data download, inspect bulk exports, run filters, create processed data, or start the scientific pipeline.
+
+### Verification question
+
+Can official NP-MRD sources directly verify the structure-linked usable experimental 1D 13C subset count needed before source selection?
+
+### Sources inspected
+
+- [NP-MRD Statistics](https://np-mrd.org/statistics): official statistics page. It reports a public total for experimental 1D 13C NMR spectra and separates experimental, simulated, and predicted NMR spectra at aggregate level.
+- [NP-MRD Downloads](https://np-mrd.org/downloads): official downloads page. It shows metadata exports, 2D structures in SDF, structures in SMILES/CSV, NMR peaklist files, nmrML and JCampDX spectra files, and experimental assignment CSV availability.
+- [NP-MRD 2025 Nucleic Acids Research article](https://academic.oup.com/nar/article/53/D1/D700/7906838): primary peer-reviewed article. It supports NP-MRD data availability, structure identifiers, NMR spectra formats, and the experimental/simulated/predicted data context.
+- Existing repo notes in `literature/SOURCES.md` and `literature/CLAIMS.md`: Phase 1A notes already record these NP-MRD sources as strong evidence for decision-discussion readiness, but not for a final filtered subset count.
+
+### Directly supported by sources
+
+- The official statistics page directly reports `Number of Experimental 1D 13C NMR Spectra` as `4,864`.
+- The same statistics page supports that NP-MRD distinguishes experimental, simulated, and predicted NMR spectra at aggregate level.
+- The official downloads page supports that structure exports and spectra-related exports exist through documented public paths.
+- The NP-MRD article supports that NP-MRD data can be accessed in structure formats such as SMILES, SDF, MOL, PDB, InChI, and InChIKey, and that NMR spectra are available in standard exchange formats.
+
+### Still not directly verified
+
+- The official `4,864` value is an aggregate experimental 1D 13C NMR spectra count, not a confirmed project-ready subset count.
+- The official count does not by itself prove that every counted spectrum is linked to a usable molecular structure after project filters.
+- The count does not resolve molecule-level deduplication, multiple spectra per compound, salts/mixtures, missing or ambiguous structure fields, assignment completeness, label derivation suitability, scaffold split readiness, or leakage-audit readiness.
+- No bulk export was downloaded or inspected, so the structure-linked usable filtered subset remains unverified.
+
+### Filter assumptions not applied in this task
+
+- Include experimental records only; exclude simulated and predicted records.
+- Include 1D 13C NMR records only.
+- Require a link from spectrum or assignment record to a molecule with a usable structure identifier such as SMILES, InChI, InChIKey, or SDF.
+- Leave deduplication, salt/mixture policy, label derivation, scaffold split, and leakage audit for later approved decisions.
+
+### Decision readiness
+
+`uncertain`
+
+Reason: official NP-MRD sources directly support an experimental 1D 13C NMR spectra total and strongly support the existence of structure and spectra export paths, but they do not directly verify the structure-linked usable filtered subset count needed for source selection.
+
 ## Decision
 
 Pending Mehmetali approval. No specific source is selected.
