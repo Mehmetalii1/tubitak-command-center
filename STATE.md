@@ -30,12 +30,13 @@ It does not yet implement the scientific pipeline.
 - Must-answer evidence collection plan: prepared in ADR 0001; no evidence collected, no counts confirmed, and no source selected
 - NP-MRD subset count evidence note: official experimental 1D 13C total recorded in ADR 0001; structure-linked usable filtered subset remains uncertain; no source selected
 - NMRShiftDB2 subset count evidence note: official measured/calculated aggregate counts recorded in ADR 0001; measured 13C-only filtered subset remains uncertain; no source selected
+- NMRShiftDB2 license evidence note: official license obligations recorded in ADR 0001; compatibility remains uncertain pending Mehmetali/advisor review; no source selected
 - Data downloaded: No
 - Raw data changed beyond README: No
 
 ## Next Step
 
-Prepare the next must-answer evidence note for NMRShiftDB2 license compatibility, without selecting a source.
+Prepare the minimum label/scaffold/leakage feasibility evidence note for NP-MRD and NMRShiftDB2, without implementing labels, split logic, or selecting a source.
 
 ## Pending User Decisions
 

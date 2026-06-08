@@ -288,6 +288,59 @@ Can official NMRShiftDB2 sources directly verify the measured, not calculated, 1
 
 Reason: official NMRShiftDB2 sources directly support top-level measured/calculated counts, 13C spectrum handling, measured/calculated filtering, and bulk export availability, but they do not directly verify the measured 13C-only filtered subset count needed for source selection.
 
+## NMRShiftDB2 License Evidence Note
+
+Prepared on 2026-06-08. Sources accessed on 2026-06-08.
+
+This note addresses only how well official or primary NMRShiftDB2 sources support license-compatibility review for a TUBITAK 2209-A project, possible derived dataset notes, repository documentation, software/notebook sharing, and proposal/publication plans. It is not legal advice, does not make a final legal conclusion, does not select NMRShiftDB2, and does not accept this ADR.
+
+### Verification question
+
+Do official NMRShiftDB2 license sources provide enough evidence to treat NMRShiftDB2 as license-compatible for the intended project uses before source selection?
+
+### Sources inspected
+
+- [NMRShiftDB2 data license](https://nmrshiftdb.nmr.uni-koeln.de/nmrshiftdbhtml/nmrshiftdb2datalicense.txt): official database license text. It defines the licensed database, granted rights, notice requirements, share-alike terms, produced-work notices, derivative database obligations, and an OSI-approved software condition.
+- [NMRShiftDB2 Help/About page](https://nmrshiftdb.nmr.uni-koeln.de/nmrshiftdbhtml/t1.html): official documentation. It states that the software is open source, the data is under an open-content license, and NMRShiftDB2 as a database is available under the NMRShiftDB2 Data License.
+- [NMRShiftDB2 SourceForge project page](https://sourceforge.net/projects/nmrshiftdb2/): project page. It repeats that the software is open source and the data is under an open-content license.
+- [NMRShiftDB2 SourceForge data page](https://sourceforge.net/projects/nmrshiftdb2/files/data/): project data page. It shows the presence of data export files, but no export was downloaded or inspected.
+- Existing repo notes in `literature/SOURCES.md` and `literature/CLAIMS.md`: Phase 1A notes already record the official license as strong evidence but mark final compatibility as needing separate review.
+
+### Directly supported by sources
+
+- The official license is a custom NMRShiftDB2 Database License derived from the ODC Open Database License, with additional terms.
+- The license explicitly covers the NMRShiftDB2 database of organic structures and assigned NMR spectra, including forms such as SDF, CML, and SQL files.
+- The license grants broad use rights, including commercial use, subject to conditions.
+- Publicly conveying the database, a derivative database, or the database as part of a collective database requires license/URI notices and preservation of relevant notices.
+- Public produced works require a notice that the content was obtained from NMRShiftDB2 and is available under the NMRShiftDB2 Database License.
+- Public derivative databases are subject to share-alike style requirements.
+- Public use of a derivative database or produced work from a derivative database can trigger an obligation to offer the derivative database or alteration/method file in machine-readable form.
+- Software that relies on the database, a derivative database, or a produced work for its intended functionality must be licensed under an Open Source Initiative-approved license.
+- The database license says it does not apply to computer programs used in making or operating the database, so database-data obligations and software-code licensing need to be considered separately.
+
+### License compatibility notes
+
+- TUBITAK 2209-A academic use: no non-commercial-only restriction was found in the official data license; broad use is supported by the license text, but any public reuse still needs notices and license compliance.
+- Repository documentation: documenting source identity, access date, license URL, and required attribution/notice appears necessary if NMRShiftDB2 remains a candidate or is later selected.
+- Derived dataset sharing: public release of a filtered or transformed NMRShiftDB2-derived dataset may be treated as a derivative database and may need share-alike licensing plus a machine-readable derivative database or alteration/method file.
+- Software/notebook sharing: notebooks or software that require NMRShiftDB2 data, a derivative database, or produced work for intended functionality may need an OSI-approved license; notebooks that only document methods without bundling or depending on data still need separate review before release.
+- Publication/proposal use: small textual summaries, counts, or produced outputs may require a clear NMRShiftDB2 notice if they publicly use produced work; exact citation and notice wording should be drafted later, not in this note.
+
+### Still unclear / risk areas
+
+- Whether a future project-specific filtered subset would be legally treated as a derivative database, a produced work, a collective database component, or only documented filtering logic.
+- Whether publishing only identifiers, labels, or derived functional-group annotations would trigger derivative database obligations.
+- Whether project notebooks that demonstrate loading/filtering against NMRShiftDB2 exports would count as software relying on the database for intended functionality.
+- Which repository license would be chosen if future software/notebooks must satisfy the OSI-approved software condition.
+- Whether advisor, institution, or TUBITAK publication rules impose additional constraints beyond the NMRShiftDB2 license.
+- Whether individual contents inside the database have any separate rights or constraints not covered by the database license.
+
+### Decision readiness
+
+`uncertain`
+
+Reason: official NMRShiftDB2 license evidence is strong and supports broad reuse in principle, but public derived dataset release, repository packaging, software/notebook licensing, notice wording, and institutional/project constraints still need Mehmetali/advisor review before license compatibility can support source selection.
+
 ## Decision
 
 Pending Mehmetali approval. No specific source is selected.
