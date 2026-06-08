@@ -24,7 +24,7 @@ A decision listed here is not yet accepted.
 
 ## Pending Setup / Governance Decisions
 
-- First learning gate to work on
+- First learning gate to work on: resolved. GATE_01 (multi-label classification) is the selected first gate; full order in learning/PROJECT_CONCEPT_DEPENDENCIES.md. Gates remain Not started; this is sequencing, not passing.
 - First scientific-preparation task
 - Timing for Phase 1 start
 
