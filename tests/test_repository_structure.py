@@ -109,6 +109,7 @@ RDKIT_REQUIRED_FILES = [
     "learning/rdkit/audits/00_rdkit_projedeki_rolu_audit.md",
     "learning/rdkit/audits/01_smiles_mol_nesnesi_audit.md",
     "learning/rdkit/audits/nmrshiftdb2_nmredata_learning_sample_policy.md",
+    "learning/rdkit/examples/README.md",
     "learning/rdkit/examples/nmrshiftdb2rawdata.nmredata.sd",
 ]
 
