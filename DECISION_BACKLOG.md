@@ -19,6 +19,7 @@ A decision listed here is not yet accepted.
 
 - Focused verification completed for NP-MRD, NMRShiftDB2, and HMDB.
 - Decision discussion prepared for NP-MRD vs NMRShiftDB2.
+- The two real open decisions (NMRShiftDB2 license yes/no; NP-MRD vs NMRShiftDB2 narrative/scope) are framed neutrally for Mehmetali in docs/decisions/data-source/DECISION_NOTE.md.
 - HMDB remains a fallback/comparison candidate until the experimental/predicted 13C split is checked.
 - This is not a source selection.
 
