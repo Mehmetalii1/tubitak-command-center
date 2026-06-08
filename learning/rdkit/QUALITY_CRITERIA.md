@@ -25,6 +25,9 @@ bilimsel pipeline başlatmaz.
 
 - Notebooklar örnek veriyi okurken başarısız kayıtlar, eksik property alanları ve
   beklenmeyen metadata için açıklayıcı kontroller içermelidir.
+- Notebook anlatımı, kod yorumları ve insan-okur çıktıları UTF-8 Türkçe karakter
+  bütünlüğünü korumalıdır; `?`e dönüşmüş mojibake bırakılmamalı, emin olunamayan
+  yerler audit içinde açıkça raporlanmalıdır.
 - Notebooklar örnek veriden çıkarılan gözlemleri bilimsel sonuç gibi
   sunmamalıdır.
 - Notebooklar veri kaynağı seçimi, final label schema, split stratejisi veya

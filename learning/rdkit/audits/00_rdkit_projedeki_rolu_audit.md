@@ -27,6 +27,13 @@ düzeltme ile eklendi. Notebook yeniden üretilmedi.
 | Notebook `QUALITY_CRITERIA.md` kurallarına uyuyor mu? | Uygun | Oyuncak molekül listesi kullanıldı; NMReDATA dosyası ana veri yapılmadı ve final dataset gibi adlandırılmadı. |
 | Notebook final dataset seçimi veya bilimsel pipeline başlatıyor mu? | Uygun | Final dataset seçimi, source selection, ADR kabulü, processed veri, modelleme veya evaluation yok. |
 
+## Encoding kontrolü
+
+Notebook JSON geçerliliği korunarak Türkçe karakter bütünlüğü ayrıca kontrol
+edildi. Bozuk `?` mojibake'i yalnızca prose, yorum ve insan-okur stringlerinde
+düzeltildi; notebook yeniden çalıştırılmadı. Bu not bilimsel karar, ADR kabulü
+veya learning gate geçişi anlamına gelmez.
+
 ## No-go kontrolü
 
 - ADR 0001 değiştirilmedi.
