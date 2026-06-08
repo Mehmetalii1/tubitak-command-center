@@ -429,6 +429,50 @@ Source selection is not ready yet. The current evidence is useful for a decision
 
 Reason: evidence is now organized enough for a structured pre-selection discussion, but source selection is not ready yet because all must-answer items remain open or partially verified. No candidate is selected by this summary.
 
+## Advisor / Owner Discussion Questions
+
+Prepared on 2026-06-08.
+
+These questions are for Mehmetali/advisor discussion before any source selection. They do not select a source, accept this ADR, authorize data download, define labels, implement split/leakage logic, create counts or coverage results, or make legal conclusions.
+
+### Dataset viability
+
+- For NP-MRD, is the official experimental 1D 13C total enough to justify one more verification pass, even though the structure-linked usable subset remains unverified?
+- For NMRShiftDB2, is the aggregate measured spectra evidence enough to justify one more verification pass, even though the measured 13C-only subset remains unverified?
+- What minimum usable subset size or count range would be acceptable before a source-selection discussion becomes meaningful?
+- Should the project prefer a narrower but more coherent dataset story, or a broader dataset story with more filtering and license complexity, if both remain scientifically defensible?
+
+### Legal / license / sharing constraints
+
+- Are NMRShiftDB2 notice, share-alike, derivative database, and OSI-approved software conditions acceptable for the intended repository and future notebook/software sharing?
+- Would publishing a filtered subset, identifiers, labels, or derived notes create a license obligation that should be reviewed before source selection?
+- Does NP-MRD's CC BY-NC context fit the expected TUBITAK 2209-A dissemination, publication, and repository plans?
+- Who should review the final license interpretation before any source is selected: Mehmetali, advisor, institution, or another reviewer?
+
+### Label derivation feasibility
+
+- Is structure-based functional-group label derivation acceptable in principle for this project if the source does not provide ready labels?
+- What level of label coverage evidence is needed before selecting a data source, without designing the final label schema yet?
+- Are natural-product-biased labels and broader organic-chemistry labels both acceptable project stories, or does one create a clearer learning/research scope?
+
+### Leakage and split strategy
+
+- Should source selection require clear molecule-level grouping evidence before any later scaffold-aware split design?
+- What leakage risks would be unacceptable at source-selection time, even before implementing a split?
+- Should duplicate, near-duplicate, stereochemistry, salts/mixtures, and multiple-spectra-per-molecule policies be drafted before or after source selection?
+- How much confidence is needed that experimental versus predicted/calculated contamination can be filtered cleanly?
+
+### Project scope / TUBITAK suitability
+
+- Which unresolved uncertainty is most important for a TUBITAK 2209-A project: usable count, license clarity, label feasibility, scaffold/leakage auditability, or narrative explainability?
+- Is a smaller, more explainable initial source acceptable if it keeps the first scientific scope auditable?
+- What evidence would be sufficient to move from pre-selection readiness to a formal source-selection discussion without starting the scientific pipeline?
+
+### Fallback decision path
+
+- If NP-MRD and NMRShiftDB2 both remain uncertain after one more public verification pass, when should HMDB be revisited as fallback/comparison rather than a main contender?
+- What condition would justify pausing source selection and asking for advisor input instead of collecting more public evidence?
+
 ## Decision
 
 Pending Mehmetali approval. No specific source is selected.

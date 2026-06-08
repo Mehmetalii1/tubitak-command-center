@@ -33,12 +33,13 @@ It does not yet implement the scientific pipeline.
 - NMRShiftDB2 license evidence note: official license obligations recorded in ADR 0001; compatibility remains uncertain pending Mehmetali/advisor review; no source selected
 - Label/scaffold/leakage feasibility note: prepared in ADR 0001 for NP-MRD and NMRShiftDB2; feasibility remains uncertain; no label schema, split code, audit code, or source selection
 - Compact pre-selection readiness summary: prepared in ADR 0001; all must-answer items remain uncertain; source selection is not ready yet
+- Advisor/owner discussion questions: prepared in ADR 0001 for non-decisional pre-selection discussion; no source selected
 - Data downloaded: No
 - Raw data changed beyond README: No
 
 ## Next Step
 
-Decide whether to do one more non-download public verification pass for unresolved counts/license details or pause for Mehmetali/advisor discussion before source selection.
+Use the advisor/owner discussion questions to decide whether to do one more non-download public verification pass or pause for Mehmetali/advisor discussion before source selection.
 
 ## Pending User Decisions
 
