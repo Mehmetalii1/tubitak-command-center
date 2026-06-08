@@ -6,7 +6,6 @@ A decision listed here is not yet accepted.
 
 ## Pending Scientific Decisions
 
-- Data source (pending; working assumptions drafted in ADR 0001; candidate research completed; focused verification completed; decision discussion prepared for NP-MRD vs NMRShiftDB2; final decision not approved)
 - Label set definition
 - 13C NMR representation strategy
 - Feature extraction strategy
@@ -15,13 +14,13 @@ A decision listed here is not yet accepted.
 - Minimum acceptable evaluation protocol
 - Proposal scope
 
-## Data Source Backlog Note
+## Data Source Decision Note
 
-- Focused verification completed for NP-MRD, NMRShiftDB2, and HMDB.
-- Decision discussion prepared for NP-MRD vs NMRShiftDB2.
-- The two real open decisions (NMRShiftDB2 license yes/no; NP-MRD vs NMRShiftDB2 narrative/scope) are framed neutrally for Mehmetali in docs/decisions/data-source/DECISION_NOTE.md.
-- HMDB remains a fallback/comparison candidate until the experimental/predicted 13C split is checked.
-- This is not a source selection.
+- ADR 0001 is Accepted: NMRShiftDB2 is conditionally accepted as the first active data source.
+- This is reversible / conditional acceptance, not a completed scientific pipeline.
+- NP-MRD is deferred as a secondary candidate, not rejected.
+- HMDB remains a fallback / comparison candidate.
+- NMRShiftDB2 license, attribution/share-alike obligations, usable measured 13C subset count, assignment quality, and export practicality remain blocker areas for the first separately approved verification task.
 
 ## Pending Setup / Governance Decisions
 

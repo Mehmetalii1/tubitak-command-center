@@ -17,7 +17,7 @@ Move the Command Center into readiness mode: mature the pending decisions and pr
 
 Scope:
 - conceptual learning-gate progress
-- decision maturation (license, narrative/scope) without source selection
+- conditional data-source decision tracking without scientific pipeline start
 - governance and structure refactors that reduce document drift
 
 Done-when:
@@ -28,9 +28,10 @@ Done-when:
 
 Boundary:
 - no data download
-- no source selection
+- no unapproved data-source change beyond ADR 0001
 - no model / split / label / feature code
-- no ADR Accepted, no learning gate Passed
+- ADR 0001 may be Accepted as the conditional data-source decision; ADR 0002 and ADR 0003 remain Proposed
+- no learning gate Passed
 
 ## Phase 1 - Scientific Baseline Preparation
 

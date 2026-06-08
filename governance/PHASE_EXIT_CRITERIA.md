@@ -17,9 +17,10 @@ Phase 1A is a readiness / scientific-preparation planning sub-phase between Phas
 - Learning gates have a defined dependency order and a selected first gate.
 - A conceptual prototype-shape note exists and is linked to gates and the prototype-preparation checklist.
 - ADR 0001 is reduced to template shape, with evidence/discussion material relocated under `docs/decisions/data-source/`.
-- Pending data-source blockers (license judgment, narrative/scope preference) are framed in a decision note for Mehmetali.
-- No data source is selected, no data is downloaded, and the scientific pipeline has not started.
-- No ADR is Accepted and no learning gate is Passed.
+- ADR 0001 may record the conditional NMRShiftDB2 data-source decision after Mehmetali approval.
+- NMRShiftDB2 blocker areas (license, attribution/share-alike obligations, usable measured 13C subset count, assignment quality, and export practicality) remain queued for separately approved verification.
+- No data is downloaded, and the scientific pipeline has not started.
+- ADR 0002 and ADR 0003 remain Proposed, and no learning gate is Passed.
 
 ## Decision-Stall Rule
 

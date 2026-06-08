@@ -7,15 +7,15 @@
 
 ## Status
 
-Proposed
+Accepted
 
 ## Context
 
-The data source for the 13C NMR functional group prediction project has not been approved yet.
+The first active data source for the 13C NMR functional group prediction project has now been conditionally approved.
 
 This decision comes first because the selected data source will constrain the label set, 13C NMR representation strategy, leakage risk, scaffold split feasibility, and minimum evaluation protocol.
 
-During Phase 1A, this ADR records working assumptions only. It does not select a specific data source, authorize data download, or start the scientific pipeline.
+During Phase 1A, this ADR selects the data-source direction only. It does not authorize data download, parser/loader work, processed data creation, split implementation, modeling, evaluation, or experiment run logging.
 
 ## Current working assumptions
 
@@ -39,10 +39,10 @@ During Phase 1A, this ADR records working assumptions only. It does not select a
 
 ## Open questions
 
-- Which candidate sources satisfy both 13C NMR availability and molecular structure availability?
-- What license or access limitations apply to each candidate source?
-- Does each source provide experimental spectra, calculated spectra, or mixed records?
-- Are metadata fields sufficient to reproduce filtering and selection?
+- Are NMRShiftDB2 license, attribution, share-alike, derivative-database, and software-license obligations acceptable for the intended repository, notebooks, publication path, and any future derived dataset?
+- What is the usable measured 13C NMR subset count after approved project filters?
+- Is assignment quality sufficient for the first defensible project subset?
+- Are NMRShiftDB2 exports practical enough for a small, auditable first pipeline?
 - Can functional group labels be derived consistently from the available structure representation?
 - Is the source large enough for meaningful per-class evaluation after label filtering?
 
@@ -60,14 +60,22 @@ This ADR stays at template shape. New evidence and discussion go in those files,
 
 ## Decision
 
-Pending Mehmetali approval. No specific source is selected.
+Accepted: NMRShiftDB2 is the first active data source for the project.
+
+This is a reversible / conditional acceptance. It resolves the first data-source direction enough to focus the next approved verification work, but it does not claim that all project-ready subset, license, attribution, assignment-quality, or export-practicality blockers are closed.
+
+NP-MRD is not rejected. It is deferred as a secondary candidate if NMRShiftDB2 fails a blocker or becomes impractical.
+
+HMDB remains a fallback / comparison candidate, not the primary source.
 
 ## Consequences
 
-No data download, processing, experiment, or run logging should start from this ADR.
+No data download, parser/loader work, processed data creation, notebook creation, split implementation, model implementation, evaluation, benchmark, score reporting, or run logging should start from this ADR.
 
-The data source decision remains open until candidate sources are compared against the criteria above and Mehmetali approves a specific direction.
+ADR 0002 (scaffold split) and ADR 0003 (label set) remain Proposed. Learning gates remain evidence-gated and must not be marked Passed from this decision.
+
+The first real approved NMRShiftDB2 notebook or verification task must explicitly check license/attribution/share-alike obligations, usable measured 13C subset count, assignment quality, and export practicality before scientific claims or pipeline work are made.
 
 ## Review Trigger
 
-Review when candidate data sources are ready to compare, when source access/license details are known, or when Mehmetali is ready to approve a specific source direction.
+Review this ADR if NMRShiftDB2 fails a blocker, if its license or share-alike obligations conflict with the project plan, if the measured 13C subset is not usable enough after approved filtering, or if NP-MRD/HMDB needs to be reconsidered.

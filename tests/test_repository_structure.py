@@ -1,4 +1,5 @@
 import json
+import re
 from pathlib import Path
 
 
@@ -172,13 +173,17 @@ def test_learning_gates_not_passed():
         assert "## Status\n\nPassed" not in text
 
 
-def test_adrs_are_proposed_not_accepted():
-    adr_files = sorted((ROOT / "docs" / "adr").glob("000*.md"))
-    assert adr_files
-    for adr_file in adr_files:
-        text = adr_file.read_text(encoding="utf-8")
-        assert "## Status\n\nProposed" in text
-        assert "## Status\n\nAccepted" not in text
+def adr_status(path: str) -> str:
+    text = read_text(path)
+    match = re.search(r"^## Status[ \t]*\n[ \t]*\n([A-Za-z]+)[ \t]*$", text, re.MULTILINE)
+    assert match is not None, f"ADR status not found in {path}"
+    return match.group(1)
+
+
+def test_adr_statuses_match_current_decisions():
+    assert adr_status("docs/adr/0001-data-source.md") == "Accepted"
+    assert adr_status("docs/adr/0002-scaffold-split.md") == "Proposed"
+    assert adr_status("docs/adr/0003-label-set.md") == "Proposed"
 
 
 def test_literature_and_proposal_are_placeholders():
