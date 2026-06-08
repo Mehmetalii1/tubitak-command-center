@@ -45,6 +45,7 @@ It does not yet implement the scientific pipeline.
 - RDKit Learning Module: nmrshiftdb2rawdata.nmredata.sd dosyasinin learning sample / pilot example olarak kullanilmasina karar verildi; bu karar final dataset secimi degildir ve veri indirme, modelleme, train/test split, evaluation veya ADR kabulu yapilmadi
 - RDKit Learning Module: 00_rdkit_projedeki_rolu.ipynb üretildi ve audit edildi; bu notebook eğitim amaçlıdır, veri indirme, modelleme, split, evaluation, final dataset seçimi veya ADR kabulü yapılmadı
 - RDKit Learning Module: 00 notebook için eksik prompt provenance dosyası geriye dönük eklendi; notebook yeniden üretilmedi ve no-go sınırları değişmedi
+- RDKit Learning Module: 01_smiles_mol_nesnesi.ipynb üretildi ve audit edildi; bu notebook eğitim amaçlıdır, veri indirme, modelleme, split, evaluation, final dataset seçimi veya ADR kabulü yapılmadı
 - Data downloaded: No
 - Raw data changed beyond README: No
 
