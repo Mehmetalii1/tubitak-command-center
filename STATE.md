@@ -36,12 +36,13 @@ It does not yet implement the scientific pipeline.
 - Advisor/owner discussion agenda: prepared in ADR 0001 as a short non-decisional meeting flow; no source selected
 - Advisor/owner discussion questions: prepared in ADR 0001 for non-decisional pre-selection discussion; no source selected
 - Discussion outcome template: blank TBD template prepared in ADR 0001; no real discussion outcome recorded and no source selected
+- First Prototype Preparation Track: created as a conceptual learning/preparation track for Mehmetali; no data download, source selection, learning gate pass, scientific implementation, or model code started
 - Data downloaded: No
 - Raw data changed beyond README: No
 
 ## Next Step
 
-Use the advisor/owner discussion agenda for the real Mehmetali/advisor discussion, then fill the blank discussion outcome template only with real discussion results and without changing ADR status unless separately approved.
+Begin conceptual first-prototype preparation through learning notes and checklists while keeping source selection, data download, and scientific implementation blocked until separately approved. Continue using the advisor/owner discussion as a parallel uncertainty-reduction path, and record only real discussion results without changing ADR status unless separately approved.
 
 ## Pending User Decisions
 
