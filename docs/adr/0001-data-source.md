@@ -473,6 +473,22 @@ These questions are for Mehmetali/advisor discussion before any source selection
 - If NP-MRD and NMRShiftDB2 both remain uncertain after one more public verification pass, when should HMDB be revisited as fallback/comparison rather than a main contender?
 - What condition would justify pausing source selection and asking for advisor input instead of collecting more public evidence?
 
+## Discussion Outcome Template
+
+This section is only a blank template for recording the outcome of a future Mehmetali/advisor discussion. It is not a source selection, does not change ADR status, and must not be treated as an accepted decision by itself.
+
+- Discussion date: `TBD`
+- Participants: `TBD`
+- Main questions discussed: `TBD`
+- Evidence accepted as sufficient: `TBD`
+- Evidence still missing: `TBD`
+- License / sharing concerns: `TBD`
+- Dataset viability concerns: `TBD`
+- Label / scaffold / leakage concerns: `TBD`
+- Candidate source preference, if any: `TBD / non-decisional`
+- Follow-up actions: `TBD`
+- Decision impact: `No ADR status change recorded in this template`
+
 ## Decision
 
 Pending Mehmetali approval. No specific source is selected.
