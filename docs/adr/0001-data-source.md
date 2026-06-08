@@ -240,6 +240,54 @@ Can official NP-MRD sources directly verify the structure-linked usable experime
 
 Reason: official NP-MRD sources directly support an experimental 1D 13C NMR spectra total and strongly support the existence of structure and spectra export paths, but they do not directly verify the structure-linked usable filtered subset count needed for source selection.
 
+## NMRShiftDB2 Subset Count Evidence Note
+
+Prepared on 2026-06-08. Sources accessed on 2026-06-08.
+
+This note addresses only how well official or primary NMRShiftDB2 sources support the measured, not calculated, 13C-only subset count question. It does not select NMRShiftDB2, accept this ADR, authorize data download, inspect bulk exports, run filters, create processed data, or start the scientific pipeline.
+
+### Verification question
+
+Can official NMRShiftDB2 sources directly verify the measured, not calculated, 13C-only subset count needed before source selection?
+
+### Sources inspected
+
+- [NMRShiftDB2 official site](https://nmrshiftdb.nmr.uni-koeln.de/): official site. It reports current top-level usage counts for structures and spectra, including measured and calculated spectra.
+- [NMRShiftDB2 Search page](https://nmrshiftdb.nmr.uni-koeln.de/portal/js_pane/P-Search): official search page. It lists `13C` among spectrum types and exposes expert-mode areas for measured/calculated and spectrum-type filtering.
+- [Using NMRShiftDB2](https://nmrshiftdb.nmr.uni-koeln.de/nmrshiftdbhtml/using.html): official documentation. It states that searches can distinguish measured and theoretically calculated spectra and can be restricted by spectrum type.
+- [NMRShiftDB2 Help/About page](https://nmrshiftdb.nmr.uni-koeln.de/nmrshiftdbhtml/t1.html): official documentation. It supports one-dimensional NMR shift data including 13C and documents public data availability in NMReDATA, SDF, SDF-with-spectra, and CML/XML-style forms.
+- [NMRShiftDB2 SourceForge data page](https://sourceforge.net/projects/nmrshiftdb2/files/data/): project download repository. It shows bulk export files, but no file was downloaded or inspected.
+- Existing repo notes in `literature/SOURCES.md` and `literature/CLAIMS.md`: Phase 1A notes already record NMRShiftDB2 as strong evidence for measured/calculated top-level counts and export availability, but not for a final measured 13C-only subset count.
+
+### Directly supported by sources
+
+- The official site directly reports top-level spectra counts: `Measured 70029, calculated 396583`.
+- Official documentation supports that NMRShiftDB2 contains both measured and theoretically calculated spectra.
+- Official search documentation supports filtering searches to measured-only, calculated-only, or both types of NMR data.
+- Official search UI/documentation supports `13C` as a spectrum type.
+- Official help/download documentation supports export availability for structure-linked spectral data in formats such as NMReDATA, SDF, SDF-with-spectra, and CML/XML-style exports.
+
+### Still not directly verified
+
+- The official `70029` measured spectra count is an aggregate measured spectra count, not a confirmed measured 13C-only subset count.
+- The official sources inspected do not directly report the intersection of measured spectra and 13C-only spectra.
+- The official sources do not directly resolve whether the measured 13C-only subset excludes 1H, 2D, 13C/1H correlation, calculated/predicted records, unreviewed records, duplicates, or records without project-usable molecule linkage.
+- Official export paths exist, but the measured 13C-only filtered subset remains unverified without a future approved export/query/filter audit.
+- No bulk export was downloaded or inspected.
+
+### Filter assumptions not applied in this task
+
+- Include measured records only; exclude calculated or predicted records.
+- Include 13C spectrum type only; exclude 1H, other nuclei, 2D spectra, and 13C/1H correlation unless later approved.
+- Require a molecule/spectrum linkage suitable for later label derivation, scaffold-aware split, deduplication, and leakage audit.
+- Leave unreviewed-record policy, duplicate policy, field-level import schema, and license compatibility for later approved evidence notes or ADRs.
+
+### Decision readiness
+
+`uncertain`
+
+Reason: official NMRShiftDB2 sources directly support top-level measured/calculated counts, 13C spectrum handling, measured/calculated filtering, and bulk export availability, but they do not directly verify the measured 13C-only filtered subset count needed for source selection.
+
 ## Decision
 
 Pending Mehmetali approval. No specific source is selected.
