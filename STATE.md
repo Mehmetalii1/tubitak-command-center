@@ -42,6 +42,7 @@ It does not yet implement the scientific pipeline.
 - First Prototype Preparation Track: created as a conceptual learning/preparation track for Mehmetali; no data download, source selection, learning gate pass, scientific implementation, or model code started
 - Learning gate system: operationalized (dependency order set, GATE_01 selected first, evidence format defined in learning/learning_logs/README.md); gates remain Not started
 - Conceptual prototype-shape map: learning/PROTOTYPE_SHAPE.md created (concept-level stages linked to gates); no code, data, counts, or source selection
+- RDKit Learning Module: nmrshiftdb2rawdata.nmredata.sd dosyasinin learning sample / pilot example olarak kullanilmasina karar verildi; bu karar final dataset secimi degildir ve veri indirme, modelleme, train/test split, evaluation veya ADR kabulu yapilmadi
 - Data downloaded: No
 - Raw data changed beyond README: No
 
