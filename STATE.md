@@ -25,6 +25,7 @@ It does not yet implement the scientific pipeline.
 - ADRs: ADR 0001 Accepted; ADR 0002 and ADR 0003 Proposed
 - Data source: NMRShiftDB2 is conditionally accepted as the first active data source in ADR 0001; NP-MRD is deferred as a secondary candidate, and HMDB remains fallback / comparison
 - Data source acceptance boundary: this does not authorize data download, parser/loader work, processed data, notebook creation, split implementation, model implementation, evaluation, benchmark, score reporting, or run logging
+- Minimal notebook-support Codex skills installed in repo-local `.agents/skills`: `rdkit`, `scikit-learn`, `matplotlib`, and `markdown-mermaid-writing`; this does not authorize data download, notebook creation, preprocessing, feature extraction, modeling, evaluation, new source selection, new planning, or governance expansion
 - NMRShiftDB2 blocker areas: license, attribution/share-alike obligations, usable measured 13C subset count, assignment quality, and export practicality remain to be verified in separately approved first real notebook or verification tasks
 - Data source evidence/discussion notes: docs/decisions/data-source/ remains the centralized historical/pre-decision evidence folder; older notes remain useful context but do not start the scientific pipeline
 - First Prototype Preparation Track: created as a conceptual learning/preparation track for Mehmetali; no data download, learning gate pass, scientific implementation, or model code started
