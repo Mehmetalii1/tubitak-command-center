@@ -106,6 +106,37 @@ Remaining open questions before any source can be selected:
 - Which candidate supports the cleanest scaffold-aware split and leakage audit after molecule deduplication?
 - Which candidate is easiest to explain without overstating scientific certainty in the TUBITAK 2209-A context?
 
+## Remaining Data Source Verification Checklist
+
+Prepared on 2026-06-08.
+
+This is the smallest remaining verification plan before any source selection. It does not select a source, accept this ADR, authorize data download, start a scientific pipeline, create processed data, or produce experiment results.
+
+### Must answer before source selection
+
+- NP-MRD usable subset count: confirm whether the structure-linked, experimental, 1D 13C subset remains large enough after minimal project filters. Record the evidence source, access date, filter assumptions, count or count range, and unresolved caveats.
+- NMRShiftDB2 measured subset count: confirm whether the measured, not calculated, 13C-only subset remains large enough after minimal project filters and has a clear molecule-structure linkage. Record the evidence source, access date, filter assumptions, count or count range, and unresolved caveats.
+- NMRShiftDB2 license compatibility: check the custom database license against the intended project repository, TUBITAK proposal/publication path, possible derived dataset notes, and possible future software release. Record obligations, blockers, and whether Mehmetali or advisor review is needed.
+- Minimal feasibility comparison: for NP-MRD and NMRShiftDB2 only, check whether the available structure identifiers appear sufficient for later label derivation, scaffold-aware split, deduplication, and leakage audit. Do not define labels, implement split code, or derive labels in this step.
+- Decision readiness note: summarize each must-answer item as clean, blocked, or still uncertain before asking Mehmetali to choose a source.
+
+### Nice to answer later
+
+- Detailed per-class functional-group label coverage after a future approved label-schema ADR.
+- Field-level import schema for the selected export format after a source is approved.
+- Duplicate handling details, stereochemistry policy, salt/mixture policy, and molecule-standardization rules.
+- HMDB current experimental versus predicted 13C separation and clean structure linkage, only if a fallback/comparison source becomes necessary.
+- Citation wording, final literature summary text, and TUBITAK proposal language after source approval.
+
+### Not needed yet
+
+- Selecting NP-MRD, NMRShiftDB2, or HMDB.
+- Treating HMDB as a main contender before its fallback/comparison checks are needed.
+- Downloading data, modifying `data/raw/`, or creating processed data.
+- Writing data loaders, model, training, evaluation, feature extraction, or scaffold-split code.
+- Creating real or fake experiment results, adding real rows to `experiments/runs.csv`, or reporting performance.
+- Marking this ADR as `Accepted` or marking any learning gate as `Passed`.
+
 ## Decision
 
 Pending Mehmetali approval. No specific source is selected.
