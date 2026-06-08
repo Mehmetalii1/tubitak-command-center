@@ -72,6 +72,40 @@ The verification summary is preparation for decision discussion only, not a deci
 - HMDB remains promising but needs one more check. Public evidence supports metadata, structure fields, license clarity, and 13C NMR availability. Remaining check: current experimental versus predicted 13C separation and clean structure linkage.
 - None of the three candidates currently provides a ready functional-group label set for this project. Structure-based label derivation remains a separate ADR/audit topic.
 
+## Data Source Decision Discussion
+
+This section prepares a decision discussion only. It does not select a source, does not change this ADR from `Proposed`, and does not authorize data download, processing, experiments, or run logging.
+
+HMDB is not treated as a main contender in this discussion. It remains a fallback/comparison candidate until its current experimental/predicted 13C split and clean structure linkage are checked.
+
+| criterion | NP-MRD | NMRShiftDB2 | discussion note |
+| --- | --- | --- | --- |
+| 13C NMR suitability | Strong if the structure-linked usable experimental 1D 13C subset remains large enough after filtering. | Strong if the measured 13C-only subset is large enough after filtering. | Both are suitable for discussion; neither is approved without subset-count verification. |
+| Experimental/predicted distinction | Public evidence supports experimental, simulated, and predicted categories. | Public evidence supports measured and calculated categories. | Both appear filterable in principle; exact project filter rules still need audit. |
+| Structure-linked data availability | Public evidence supports SDF, SMILES, MOL/PDB, InChI, and InChIKey paths. | Public evidence supports SDF/NMReDATA/CML-like exports plus SMILES/chiral SMILES and structure tables. | Both appear compatible with scaffold-aware evaluation, pending field-level audit. |
+| Bulk export and reproducibility | Strong download/documentation evidence for structured exports and spectra-related files. | Strong download/documentation evidence for SDF-with-signals, NMReDATA, XML/CML-like, and SQL paths. | Both are reproducible candidates if version, access date, filters, and identifiers are documented. |
+| License/citation/reuse risk | Clear CC BY-NC context; non-commercial limitation must fit project dissemination plans. | Broader reuse appears possible, but custom database license obligations may affect derivative datasets/software. | NP-MRD is clearer but narrower; NMRShiftDB2 may be more reusable but needs compatibility review. |
+| Functional group label derivation | No ready project-specific label set confirmed; labels would likely be derived from molecular structure. | No ready project-specific label set confirmed; labels would likely be derived from molecular structure. | Same blocker for both: label schema and derivation require a later ADR/audit. |
+| Scaffold-aware evaluation readiness | Appears ready in principle because structure identifiers are available. | Appears ready in principle because structure data and SMILES paths are available. | Both require a later scaffold split decision and leakage audit. |
+| Data cleaning and starting practicality | Natural-product scope may be chemically coherent but could require careful filtering of simulated/predicted and duplicate records. | General organic scope may align well with functional-group diversity but could require careful measured/calculated and assignment-quality filtering. | NP-MRD may be narratively cleaner; NMRShiftDB2 may be broader but license/filtering details matter. |
+| TUBITAK 2209-A defensibility | Strong if framed as a focused natural-product 13C NMR dataset with clear non-commercial academic use. | Strong if license compatibility is resolved and measured 13C subset is defensible. | Both can be defended at student-project scale if the selected subset is explainable and auditable. |
+| Future ML pipeline transition risk | Main risks: exact usable experimental 1D 13C count, natural-product distribution bias, and label coverage after filtering. | Main risks: measured 13C-only subset count, custom license obligations, and export-field audit. | The lower-risk choice depends on which unresolved check closes cleaner. |
+
+Preliminary discussion frame:
+
+- NP-MRD looks stronger if the project prioritizes a coherent natural-product story, clear experimental/simulated/predicted separation, and a tightly explainable academic dataset, assuming the structure-linked experimental 1D 13C count is sufficient.
+- NMRShiftDB2 looks stronger if the project prioritizes broader organic-chemistry coverage, measured spectra with assigned structures, and potentially more flexible reuse, assuming the measured 13C-only subset count and license compatibility are acceptable.
+- HMDB should remain outside the main NP-MRD vs NMRShiftDB2 comparison for now. It is useful as a fallback/comparison candidate because its metadata and structure fields are strong, but it still needs the experimental/predicted 13C split check before it can be treated as equally decision-ready.
+
+Remaining open questions before any source can be selected:
+
+- What is the structure-linked usable experimental 1D 13C record count for NP-MRD after project filters?
+- What is the measured 13C-only subset count for NMRShiftDB2 after project filters?
+- Are NMRShiftDB2 license obligations compatible with the intended project repository, publication, and any future derived dataset or software release?
+- Which candidate gives enough functional-group label coverage after rule-based label derivation?
+- Which candidate supports the cleanest scaffold-aware split and leakage audit after molecule deduplication?
+- Which candidate is easiest to explain without overstating scientific certainty in the TUBITAK 2209-A context?
+
 ## Decision
 
 Pending Mehmetali approval. No specific source is selected.

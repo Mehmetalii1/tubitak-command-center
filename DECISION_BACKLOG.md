@@ -6,7 +6,7 @@ A decision listed here is not yet accepted.
 
 ## Pending Scientific Decisions
 
-- Data source (pending; working assumptions drafted in ADR 0001; candidate research completed; focused verification completed for NP-MRD, NMRShiftDB2, and HMDB; final decision not approved)
+- Data source (pending; working assumptions drafted in ADR 0001; candidate research completed; focused verification completed; decision discussion prepared for NP-MRD vs NMRShiftDB2; final decision not approved)
 - Label set definition
 - 13C NMR representation strategy
 - Feature extraction strategy
@@ -18,7 +18,7 @@ A decision listed here is not yet accepted.
 ## Data Source Backlog Note
 
 - Focused verification completed for NP-MRD, NMRShiftDB2, and HMDB.
-- Likely decision discussion will compare NP-MRD vs NMRShiftDB2.
+- Decision discussion prepared for NP-MRD vs NMRShiftDB2.
 - HMDB remains a fallback/comparison candidate until the experimental/predicted 13C split is checked.
 - This is not a source selection.
 

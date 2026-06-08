@@ -25,12 +25,13 @@ It does not yet implement the scientific pipeline.
 - Data source candidate research: integrated into repo memory; shortlist recorded for further verification only
 - Data source focused verification: completed for NP-MRD, NMRShiftDB2, and HMDB; no source selected
 - Decision discussion readiness: NP-MRD and NMRShiftDB2 noted as ready for discussion; HMDB noted as fallback/comparison candidate needing one more experimental/predicted 13C check
+- Data source decision discussion: prepared in ADR 0001 for NP-MRD vs NMRShiftDB2; no source selected
 - Data downloaded: No
 - Raw data changed beyond README: No
 
 ## Next Step
 
-Prepare a data source decision discussion prompt comparing NP-MRD vs NMRShiftDB2, with HMDB kept as fallback/comparison, without starting selection automatically.
+Review the prepared data source decision discussion and decide whether to run the smallest remaining verification check before any source selection.
 
 ## Pending User Decisions
 
