@@ -32,12 +32,13 @@ It does not yet implement the scientific pipeline.
 - NMRShiftDB2 subset count evidence note: official measured/calculated aggregate counts recorded in ADR 0001; measured 13C-only filtered subset remains uncertain; no source selected
 - NMRShiftDB2 license evidence note: official license obligations recorded in ADR 0001; compatibility remains uncertain pending Mehmetali/advisor review; no source selected
 - Label/scaffold/leakage feasibility note: prepared in ADR 0001 for NP-MRD and NMRShiftDB2; feasibility remains uncertain; no label schema, split code, audit code, or source selection
+- Compact pre-selection readiness summary: prepared in ADR 0001; all must-answer items remain uncertain; source selection is not ready yet
 - Data downloaded: No
 - Raw data changed beyond README: No
 
 ## Next Step
 
-Prepare a compact pre-selection readiness summary for all must-answer evidence notes, without selecting a source.
+Decide whether to do one more non-download public verification pass for unresolved counts/license details or pause for Mehmetali/advisor discussion before source selection.
 
 ## Pending User Decisions
 

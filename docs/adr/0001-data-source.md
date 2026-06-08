@@ -388,6 +388,47 @@ Both NP-MRD and NMRShiftDB2 have enough documented structure-identifier evidence
 
 Reason: minimum feasibility is plausible for both candidates because structure identifiers and spectra-related exports are documented, but project-specific label derivation, scaffold splitting, duplicate handling, leakage controls, and contamination filters are not yet verified or implemented.
 
+## Compact Pre-Selection Readiness Summary
+
+Prepared on 2026-06-08.
+
+This summary collects the current must-answer evidence notes in one place before source selection. It does not select a source, accept this ADR, authorize data download, start the scientific pipeline, define labels, implement split/leakage logic, create coverage/count results, or make legal conclusions.
+
+Source selection is not ready yet. The current evidence is useful for a decision discussion, but the must-answer items remain `uncertain` because key filtered counts, license interpretation, and field-level audit details are not fully closed.
+
+### Readiness matrix
+
+| item | current evidence | remaining uncertainty | decision-readiness |
+| --- | --- | --- | --- |
+| NP-MRD usable experimental 1D 13C subset count | Official NP-MRD statistics report `4,864` experimental 1D 13C NMR spectra; official downloads/article support structure and spectra export paths. | The official count is aggregate, not confirmed as structure-linked usable filtered subset after project filters, deduplication, and molecule/spectrum linkage checks. | `uncertain` |
+| NMRShiftDB2 measured 13C-only subset count | Official NMRShiftDB2 site reports top-level `Measured 70029, calculated 396583`; official search/docs support measured/calculated distinction and `13C` spectrum type. | The measured count is aggregate; official sources do not directly report the measured 13C-only filtered subset or molecule-linkage quality. | `uncertain` |
+| NMRShiftDB2 license compatibility | Official custom database license grants broad reuse in principle and documents notices, share-alike, derivative database, produced work, and OSI-approved software conditions. | Public derived dataset release, repository packaging, notebook/software licensing, notice wording, and institutional/TUBITAK constraints still need Mehmetali/advisor review. | `uncertain` |
+| NP-MRD vs NMRShiftDB2 label/scaffold/leakage feasibility | Both candidates have documented structure identifiers and spectra-related export paths, making later label derivation, scaffold split, and leakage audit plausible. | Neither candidate has project-specific label schema, field-level molecule/spectrum linkage audit, deduplication policy, scaffold split decision, leakage audit, or contamination filters verified yet. | `uncertain` |
+
+### Candidate posture
+
+#### NP-MRD
+
+- Strong side: Official evidence supports experimental 1D 13C NMR spectra, experimental/simulated/predicted distinction, and multiple structure identifier paths.
+- Weak/risky side: The public `4,864` experimental 1D 13C count is not yet the structure-linked usable filtered subset count.
+- Still needed before source selection: confirm usable structure-linked experimental 1D 13C subset after filters and clarify molecule/spectrum linkage, duplicates, and contamination controls.
+
+#### NMRShiftDB2
+
+- Strong side: Official evidence supports broad organic-structure coverage, measured/calculated distinction, 13C handling, export paths, and structure-field readiness.
+- Weak/risky side: The official measured count is aggregate, not a measured 13C-only filtered subset; license obligations also need project-specific interpretation.
+- Still needed before source selection: confirm measured 13C-only subset count/linkage and resolve license compatibility enough for the intended repository, derived dataset, notebook/software, and publication/proposal path.
+
+#### HMDB
+
+- Posture: HMDB remains fallback/comparison only. It is not part of the main NP-MRD vs NMRShiftDB2 pre-selection readiness summary unless a later fallback task is approved.
+
+### Overall decision readiness
+
+`uncertain`
+
+Reason: evidence is now organized enough for a structured pre-selection discussion, but source selection is not ready yet because all must-answer items remain open or partially verified. No candidate is selected by this summary.
+
 ## Decision
 
 Pending Mehmetali approval. No specific source is selected.
