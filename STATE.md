@@ -38,6 +38,8 @@ It does not yet implement the scientific pipeline.
 - Advisor/owner discussion questions: prepared in ADR 0001 for non-decisional pre-selection discussion; no source selected
 - Discussion outcome template: blank TBD template prepared in ADR 0001; no real discussion outcome recorded and no source selected
 - First Prototype Preparation Track: created as a conceptual learning/preparation track for Mehmetali; no data download, source selection, learning gate pass, scientific implementation, or model code started
+- Learning gate system: operationalized (dependency order set, GATE_01 selected first, evidence format defined in learning/learning_logs/README.md); gates remain Not started
+- Conceptual prototype-shape map: learning/PROTOTYPE_SHAPE.md created (concept-level stages linked to gates); no code, data, counts, or source selection
 - Data downloaded: No
 - Raw data changed beyond README: No
 
