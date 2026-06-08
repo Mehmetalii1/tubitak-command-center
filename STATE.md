@@ -19,16 +19,18 @@ It does not yet implement the scientific pipeline.
 - Learning gates: Created, all Not started, none Passed
 - Experiment tracking: Header-only scaffold
 - Proposal: Draft placeholders only
-- Literature: Placeholder only
-- ADRs: proposed placeholders only
+- Literature: Phase 1A evidence notes only; no final proposal/literature text
+- ADRs: Proposed only; none Accepted
 - Data source ADR: Proposed, enriched with working assumptions
 - Data source candidate research: integrated into repo memory; shortlist recorded for further verification only
+- Data source focused verification: completed for NP-MRD, NMRShiftDB2, and HMDB; no source selected
+- Decision discussion readiness: NP-MRD and NMRShiftDB2 noted as ready for discussion; HMDB noted as fallback/comparison candidate needing one more experimental/predicted 13C check
 - Data downloaded: No
 - Raw data changed beyond README: No
 
 ## Next Step
 
-Plan a focused verification pass for NP-MRD, NMRShiftDB2, and HMDB without downloading data.
+Prepare a data source decision discussion prompt comparing NP-MRD vs NMRShiftDB2, with HMDB kept as fallback/comparison, without starting selection automatically.
 
 ## Pending User Decisions
 

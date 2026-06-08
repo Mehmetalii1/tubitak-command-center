@@ -169,3 +169,109 @@ Medium
 ## Needs verification?
 
 Yes. Data license, structure fields, confidence filtering, and suitability as a main scientific source need verification.
+
+## Focused Verification Claims
+
+Recorded after focused verification on 2026-06-08.
+
+These claims prepare a data source decision discussion only. They do not select a source.
+
+## Claim FV-1
+
+## Claim
+
+NP-MRD appears ready for data source decision discussion because official downloads, statistics, and article evidence support 13C NMR availability, export paths, structure fields, and experimental/simulated/predicted distinctions.
+
+## Evidence
+
+- NP-MRD downloads list metadata exports, SDF structures, SMILES structures, NMR peaklists, nmrML/JCampDX spectra, experimental assignment CSV, and predicted spectra exports.
+- NP-MRD statistics report experimental 1D 13C NMR spectra alongside simulated and predicted 13C NMR counts.
+- The NP-MRD 2025 article documents data formats, structure identifiers, and CC BY-NC data-release context.
+
+## Confidence
+
+High
+
+## Used in
+
+- data source decision discussion readiness
+
+## Needs verification?
+
+Yes. Structure-linked usable experimental 1D 13C count still needs project-specific filtering before any source selection.
+
+## Claim FV-2
+
+## Claim
+
+NMRShiftDB2 appears ready for data source decision discussion because official/help/download evidence supports organic structure records, 13C NMR data handling, measured/calculated distinction, and bulk export availability.
+
+## Evidence
+
+- The official site reports organic structures and NMR spectra, with measured and calculated top-level spectrum counts.
+- The help page documents 1D 13C NMR storage and bulk data availability in NMReDATA, SDF, SDF-with-spectra, and CML/XML forms.
+- The official data license is available and explicitly grants broad reuse, but includes notice, share-alike, derivative database, and OSI-approved software conditions.
+- Technical documentation supports SMILES/chiral SMILES, atom/bond tables, and structure handling.
+
+## Confidence
+
+High for decision-discussion readiness; Medium for final license-compatibility certainty.
+
+## Used in
+
+- data source decision discussion readiness
+
+## Needs verification?
+
+Yes. Measured 13C-only subset count and custom database license compatibility must be checked separately before any source selection.
+
+## Claim FV-3
+
+## Claim
+
+HMDB remains a strong fallback/comparison candidate because metadata, structure fields, license clarity, and 13C NMR statistics are strong, but one more check is needed for current experimental versus predicted 13C separation.
+
+## Evidence
+
+- HMDB About documents CC BY-NC 4.0 licensing, commercial permission requirements, citation expectations, NMR search support, and structure formats including SMILES, SDF, MOL, InChI, InChIKey, and PDB.
+- HMDB Downloads lists structure downloads, metabolite XML/flat-file downloads, and NMR FID/peaklist/spectrum information downloads.
+- HMDB Statistics reports NMR 1D 13C spectra and compounds with NMR spectra.
+- An HMDB 1D 13C example spectrum confirms at least one concrete experimental record path.
+- HMDB release notes show predicted NMR spectra are also present in newer releases.
+
+## Confidence
+
+Medium-High
+
+## Used in
+
+- fallback/comparison candidate tracking
+
+## Needs verification?
+
+Yes. Current experimental/predicted 13C split and clean structure linkage must be checked before treating HMDB as decision-ready.
+
+## Claim FV-4
+
+## Claim
+
+NP-MRD, NMRShiftDB2, and HMDB do not remove the need for project-specific functional group label derivation; labels may be derived from structure, but that requires a separate ADR and audit.
+
+## Evidence
+
+- Focused verification confirmed structure fields or structure exports across the three shortlisted candidates.
+- No focused verification source established a ready-to-use functional-group label set aligned with this project's multi-label classification target.
+- ADR 0001 already treats functional group label extraction as a separate decision and audit topic.
+
+## Confidence
+
+High
+
+## Used in
+
+- label set decision planning
+- data source decision discussion readiness
+
+## Needs verification?
+
+Yes. Label schema and rule-based derivation must be handled in a later ADR/audit, not in the data source verification step.

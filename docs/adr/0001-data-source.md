@@ -57,6 +57,21 @@ The current shortlist is only a recommendation for further verification, not a d
 
 The shortlist is based on currently available evidence about 13C NMR relevance, molecular structure availability, license/reuse clarity, reproducibility, and scaffold-aware evaluation suitability. Each candidate still has unresolved verification questions before any source can be approved.
 
+## Focused Verification Summary
+
+Focused verification for NP-MRD, NMRShiftDB2, and HMDB was completed on 2026-06-08 and recorded in `literature/SOURCES.md` and `literature/CLAIMS.md`.
+
+No data source has been selected.
+
+This ADR remains `Proposed`.
+
+The verification summary is preparation for decision discussion only, not a decision and not authorization to download data or start the scientific pipeline.
+
+- NP-MRD appears ready for decision discussion. Public evidence supports bulk exports, structure fields, experimental/simulated/predicted distinction, and experimental 1D 13C presence. Remaining check: structure-linked usable experimental 1D 13C count after project filtering.
+- NMRShiftDB2 appears ready for decision discussion. Public evidence supports 13C NMR handling, measured/calculated distinction, structure fields, and bulk exports. Remaining checks: measured 13C-only subset count and custom database license compatibility.
+- HMDB remains promising but needs one more check. Public evidence supports metadata, structure fields, license clarity, and 13C NMR availability. Remaining check: current experimental versus predicted 13C separation and clean structure linkage.
+- None of the three candidates currently provides a ready functional-group label set for this project. Structure-based label derivation remains a separate ADR/audit topic.
+
 ## Decision
 
 Pending Mehmetali approval. No specific source is selected.
