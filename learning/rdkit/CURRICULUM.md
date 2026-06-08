@@ -8,15 +8,21 @@ gerçekçi ama kontrollü örnek gerektiğinde NMReDATA learning sample devreye 
 
 ## Veri kullanım düzeni
 
-`00`, `01`, `02` ve `03` ile başlayan ilk teknik notebooklarda küçük oyuncak
-molekül listeleri kullanılabilir. Bu aşamada amaç RDKit nesnelerini, basit
-molekül okuma işlemlerini ve temel kavramları öğrenmektir.
+Mevcut `00` ve `01` notebooklarında küçük oyuncak molekül listeleri
+kullanılır. Bu aşamada amaç RDKit nesnelerini, basit molekül okuma işlemlerini
+ve temel kavramları öğrenmektir.
+
+`02` ve sonraki teknik notebooklar henüz planlanan statüdedir. Bu curriculum
+onları üretmez ve mevcut dosya olarak kabul etmez.
 
 `examples/nmrshiftdb2rawdata.nmredata.sd` dosyası yalnızca daha gerçekçi örnek
 gereken notebooklarda kullanılabilir. Bu kullanım, final dataset seçimi veya
 modelleme hazırlığı anlamına gelmez.
 
-## NMReDATA sample kullanılabilecek notebooklar
+## NMReDATA sample kullanılabilecek planlanan notebooklar
+
+Aşağıdaki liste ileri RDKit öğrenme hattı için planlanan kullanımları gösterir;
+bu notebookların üretildiği veya tamamlandığı anlamına gelmez.
 
 - `04_kimyasal_veri_temizligi.ipynb`
 - `05_smarts_substructure_search.ipynb`

@@ -47,6 +47,7 @@ It does not yet implement the scientific pipeline.
 - RDKit Learning Module: 00_rdkit_projedeki_rolu.ipynb üretildi ve audit edildi; bu notebook eğitim amaçlıdır, veri indirme, modelleme, split, evaluation, final dataset seçimi veya ADR kabulü yapılmadı
 - RDKit Learning Module: 00 notebook için eksik prompt provenance dosyası geriye dönük eklendi; notebook yeniden üretilmedi ve no-go sınırları değişmedi
 - RDKit Learning Module: 01_smiles_mol_nesnesi.ipynb üretildi ve audit edildi; bu notebook eğitim amaçlıdır, veri indirme, modelleme, split, evaluation, final dataset seçimi veya ADR kabulü yapılmadı
+- RDKit Learning Module: CURRICULUM.md mevcut 00/01 notebookları ile planlanan 02+ notebookları net ayıracak şekilde güncellendi; yeni notebook üretilmedi ve no-go sınırları değişmedi
 - Data downloaded: No
 - Raw data changed beyond README: No
 
