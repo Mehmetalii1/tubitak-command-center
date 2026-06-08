@@ -29,3 +29,10 @@ Why: the preparation track listed learning blocks but had no single picture conn
 Boundary: concept level only; no code, data, counts, metrics, or source selection; all underlying decisions remain pending and approval-gated.
 Reversible: Yes.
 
+### 2026-06-08 - Freeze and slim ADR 0001
+
+Decision: `docs/adr/0001-data-source.md` is reduced from ~21 sections (~553 lines) to template shape (~74 lines): Status (still Proposed), Context, working assumptions, decision criteria, open questions, a relocation pointer, Decision, Consequences, Review Trigger. The 13 evidence/verification/advisor sections are moved verbatim to `docs/decisions/data-source/` (candidate-research.md, verification-and-evidence.md, advisor-discussion.md, README.md). A freeze note marks the ADR as a refactor target, not an append target.
+Why: the ADR had become the repo's largest single-file drift risk and an "append" center of gravity; the audit identified it as a refactor target.
+Boundary: content moved unchanged; no source selected; ADR stays Proposed; no ADR Accepted.
+Reversible: Yes (content is preserved and tracked in git).
+
