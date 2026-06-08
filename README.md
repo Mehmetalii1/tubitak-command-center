@@ -18,3 +18,10 @@ This repository manages:
 
 Initial setup does not implement the scientific model.
 
+## Test
+
+Run setup-safe tests locally with:
+
+```bash
+python -m pytest -q
+```

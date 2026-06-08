@@ -9,7 +9,7 @@ pip install -r requirements.txt
 ## Test
 
 ```bash
-pytest -q
+python -m pytest -q
 ```
 
 ## Repository Role
@@ -39,4 +39,3 @@ It does not execute the scientific experiment during initial setup.
 - Do not invent citations.
 - Use small scoped changes.
 - Update `STATE.md` after meaningful changes.
-

@@ -6,3 +6,8 @@ Only `test_repository_structure.py` actively validates the Command Center skelet
 
 Scientific tests are placeholder-only and skipped until Mehmetali approves Phase 1+ work.
 
+Recommended local command:
+
+```bash
+python -m pytest -q
+```
