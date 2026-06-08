@@ -341,6 +341,53 @@ Do official NMRShiftDB2 license sources provide enough evidence to treat NMRShif
 
 Reason: official NMRShiftDB2 license evidence is strong and supports broad reuse in principle, but public derived dataset release, repository packaging, software/notebook licensing, notice wording, and institutional/project constraints still need Mehmetali/advisor review before license compatibility can support source selection.
 
+## Label, Scaffold, and Leakage Feasibility Evidence Note
+
+Prepared on 2026-06-08.
+
+This note records minimum feasibility evidence for later functional-group label derivation, scaffold-aware evaluation, and leakage audit for NP-MRD and NMRShiftDB2. It does not select a source, define a label schema, write SMARTS rules, implement scaffold split logic, perform leakage audit, download data, create processed data, or start the scientific pipeline.
+
+Status vocabulary for this note:
+
+- `supported`: existing official/primary evidence directly supports the minimum feasibility point.
+- `plausible but unverified`: existing evidence makes the point plausible, but project-specific field-level or record-level checking is still needed.
+- `risk / unclear`: existing evidence exposes a known risk or does not yet resolve the point.
+- `not needed yet`: the item belongs to a later approved ADR/audit rather than this pre-selection evidence note.
+
+### NP-MRD feasibility notes
+
+| topic | status | note |
+| --- | --- | --- |
+| structure identifier availability | supported | Official NP-MRD download/article evidence supports SDF, SMILES/CSV, MOL, PDB, InChI, and InChIKey paths. This is enough to treat later structure-based label derivation and scaffold-aware evaluation as plausible. |
+| structure-to-label derivation feasibility | plausible but unverified | Structure identifiers make later rule-based functional-group label derivation plausible, but no project label schema, SMARTS/rule set, or label coverage check exists yet. |
+| molecule/spectrum linkage risk | plausible but unverified | Downloads and article evidence support spectra, peaklists, assignments, metadata, and structure exports, but the project has not verified record-level links between usable experimental 1D 13C spectra and molecule structures. |
+| duplicate / near-duplicate risk | risk / unclear | Multiple spectra per compound, repeated records, stereochemistry variants, salts/mixtures, and natural-product analog series could affect molecule-level counting and split design. No deduplication policy is defined yet. |
+| scaffold-aware split feasibility | plausible but unverified | Structure identifiers make scaffold-aware splitting feasible in principle, but no scaffold method, molecule standardization policy, or field-level audit has been approved. |
+| spectrum-level vs molecule-level leakage risk | risk / unclear | If multiple spectra or assignments exist for the same molecule, splitting at spectrum level could leak molecule identity across train/test. Molecule-level grouping is a later audit requirement, not implemented here. |
+| experimental vs predicted/calculated contamination risk | risk / unclear | Official evidence supports experimental, simulated, and predicted categories, but the usable project subset still needs filtering rules to prevent simulated/predicted contamination. |
+
+### NMRShiftDB2 feasibility notes
+
+| topic | status | note |
+| --- | --- | --- |
+| structure identifier availability | supported | Official/help/download/technical evidence supports organic structures, SDF/NMReDATA/CML-like exports, SMILES/chiral SMILES, atom/bond tables, and molecule-level structure handling. |
+| structure-to-label derivation feasibility | plausible but unverified | Structure data makes later rule-based functional-group label derivation plausible, but no project label schema, SMARTS/rule set, or label coverage check exists yet. |
+| molecule/spectrum linkage risk | plausible but unverified | NMRShiftDB2 is built around structures and assigned spectra, and exports can include spectral data, but the measured 13C-only subset and exact molecule/spectrum linkage still require field-level audit. |
+| duplicate / near-duplicate risk | risk / unclear | General organic chemistry scope may include duplicates, stereochemical variants, repeated measurements, unreviewed entries, or multiple spectra per structure. No deduplication policy is defined yet. |
+| scaffold-aware split feasibility | plausible but unverified | Structure fields make scaffold-aware splitting feasible in principle, but no scaffold method, molecule standardization policy, or field-level audit has been approved. |
+| spectrum-level vs molecule-level leakage risk | risk / unclear | Assigned spectra tied to the same or closely related structures could leak if split by spectrum instead of molecule/scaffold. This must be handled by a later leakage audit. |
+| experimental vs predicted/calculated contamination risk | risk / unclear | Official evidence supports measured/calculated distinction, but the measured 13C-only subset is not directly verified and needs later filtering rules to prevent calculated-record contamination. |
+
+### Cross-candidate takeaway
+
+Both NP-MRD and NMRShiftDB2 have enough documented structure-identifier evidence to keep later label derivation, scaffold-aware splitting, and leakage audit plausible. Neither candidate currently removes the need for a separate label-schema ADR, field-level molecule/spectrum linkage audit, deduplication policy, scaffold split decision, and leakage audit. NP-MRD's main feasibility risk is cleanly linking usable experimental 1D 13C spectra to structures after filtering; NMRShiftDB2's main feasibility risk is cleanly isolating measured 13C-only records and interpreting structure/spectrum linkage after export-field audit. This is not a source selection.
+
+### Decision readiness
+
+`uncertain`
+
+Reason: minimum feasibility is plausible for both candidates because structure identifiers and spectra-related exports are documented, but project-specific label derivation, scaffold splitting, duplicate handling, leakage controls, and contamination filters are not yet verified or implemented.
+
 ## Decision
 
 Pending Mehmetali approval. No specific source is selected.

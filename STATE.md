@@ -31,12 +31,13 @@ It does not yet implement the scientific pipeline.
 - NP-MRD subset count evidence note: official experimental 1D 13C total recorded in ADR 0001; structure-linked usable filtered subset remains uncertain; no source selected
 - NMRShiftDB2 subset count evidence note: official measured/calculated aggregate counts recorded in ADR 0001; measured 13C-only filtered subset remains uncertain; no source selected
 - NMRShiftDB2 license evidence note: official license obligations recorded in ADR 0001; compatibility remains uncertain pending Mehmetali/advisor review; no source selected
+- Label/scaffold/leakage feasibility note: prepared in ADR 0001 for NP-MRD and NMRShiftDB2; feasibility remains uncertain; no label schema, split code, audit code, or source selection
 - Data downloaded: No
 - Raw data changed beyond README: No
 
 ## Next Step
 
-Prepare the minimum label/scaffold/leakage feasibility evidence note for NP-MRD and NMRShiftDB2, without implementing labels, split logic, or selecting a source.
+Prepare a compact pre-selection readiness summary for all must-answer evidence notes, without selecting a source.
 
 ## Pending User Decisions
 
