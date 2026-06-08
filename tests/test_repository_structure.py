@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 
 
@@ -97,6 +98,27 @@ REQUIRED_FILES = [
 ]
 
 
+RDKIT_REQUIRED_FILES = [
+    "learning/rdkit/README.md",
+    "learning/rdkit/CURRICULUM.md",
+    "learning/rdkit/QUALITY_CRITERIA.md",
+    "learning/rdkit/notebooks/00_rdkit_projedeki_rolu.ipynb",
+    "learning/rdkit/notebooks/01_smiles_mol_nesnesi.ipynb",
+    "learning/rdkit/prompts/00_rdkit_projedeki_rolu_prompt.md",
+    "learning/rdkit/prompts/01_smiles_mol_nesnesi_prompt.md",
+    "learning/rdkit/audits/00_rdkit_projedeki_rolu_audit.md",
+    "learning/rdkit/audits/01_smiles_mol_nesnesi_audit.md",
+    "learning/rdkit/audits/nmrshiftdb2_nmredata_learning_sample_policy.md",
+    "learning/rdkit/examples/nmrshiftdb2rawdata.nmredata.sd",
+]
+
+
+RDKIT_NOTEBOOKS = [
+    "learning/rdkit/notebooks/00_rdkit_projedeki_rolu.ipynb",
+    "learning/rdkit/notebooks/01_smiles_mol_nesnesi.ipynb",
+]
+
+
 def read_text(path: str) -> str:
     return (ROOT / path).read_text(encoding="utf-8")
 
@@ -104,6 +126,22 @@ def read_text(path: str) -> str:
 def test_required_files_exist():
     missing = [path for path in REQUIRED_FILES if not (ROOT / path).is_file()]
     assert missing == []
+
+
+def test_rdkit_learning_module_files_exist():
+    missing = [path for path in RDKIT_REQUIRED_FILES if not (ROOT / path).is_file()]
+    assert missing == []
+
+
+def test_rdkit_notebooks_are_valid_unexecuted_json():
+    for path in RDKIT_NOTEBOOKS:
+        notebook = json.loads(read_text(path))
+        assert notebook["nbformat"] >= 4
+
+        for cell in notebook["cells"]:
+            if cell["cell_type"] == "code":
+                assert cell.get("outputs", []) == []
+                assert cell.get("execution_count") is None
 
 
 def test_runs_csv_header_only():
