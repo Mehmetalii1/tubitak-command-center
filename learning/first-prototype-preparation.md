@@ -28,6 +28,8 @@ However, the Command Center should not wait in advisor-only mode. It should also
 
 In this track, "first prototype" means a future small, inspectable, teaching-oriented starting point that Mehmetali understands before it is implemented.
 
+The concept-level shape of that prototype (its stages, in order, each linked to a gate and a readiness item) is mapped in `learning/PROTOTYPE_SHAPE.md`.
+
 Before implementation, Mehmetali should conceptually understand:
 
 - how a 13C NMR input might be represented;
@@ -113,6 +115,7 @@ No item is `approved` in this task.
 
 ## Next smallest actions
 
+- Read `learning/PROTOTYPE_SHAPE.md` and map each checklist item above to its stage and gate.
 - Create a glossary for 13C NMR and ML terms.
 - Prepare a non-code explanation of spectrum representation options.
 - Prepare a learning-gate checklist for macro F1 / per-class F1.

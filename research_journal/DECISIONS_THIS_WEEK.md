@@ -22,3 +22,10 @@ Why: the gate system was structurally sound but not operational (no order, no fi
 Boundary: all gates remain `Not started`; no gate is `Passed`; this is sequencing and evidence-format setup only.
 Reversible: Yes.
 
+### 2026-06-08 - Add a conceptual prototype-shape map
+
+Decision: `learning/PROTOTYPE_SHAPE.md` describes the first prototype's concept-level stages in order (source -> experimental 13C subset -> structure-based labels -> multi-label baseline -> scaffold-aware split -> macro/per-class F1), each linked to a gate and a readiness item; `first-prototype-preparation.md` now points to it.
+Why: the preparation track listed learning blocks but had no single picture connecting concepts to a concrete prototype shape, which the audit flagged as the missing bridge between gates and prototype-readiness.
+Boundary: concept level only; no code, data, counts, metrics, or source selection; all underlying decisions remain pending and approval-gated.
+Reversible: Yes.
+
