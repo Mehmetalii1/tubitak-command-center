@@ -10,6 +10,28 @@ Done-when:
 - setup-safe tests pass
 - scientific implementation has not started
 
+## Phase 1A - Readiness / Scientific Preparation Planning
+
+Goal:
+Move the Command Center into readiness mode: mature the pending decisions and prepare Mehmetali conceptually for the first prototype, without starting the scientific pipeline.
+
+Scope:
+- conceptual learning-gate progress
+- decision maturation (license, narrative/scope) without source selection
+- governance and structure refactors that reduce document drift
+
+Done-when:
+- learning gates have a defined dependency order and a selected first gate
+- a conceptual prototype-shape note exists and is linked to the gates
+- ADR 0001 is reduced to template shape with evidence relocated
+- the decision-stall rule (governance/PHASE_EXIT_CRITERIA.md) is documented
+
+Boundary:
+- no data download
+- no source selection
+- no model / split / label / feature code
+- no ADR Accepted, no learning gate Passed
+
 ## Phase 1 - Scientific Baseline Preparation
 
 Goal:
