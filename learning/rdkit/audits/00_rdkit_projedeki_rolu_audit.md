@@ -12,6 +12,9 @@ Not: `learning/rdkit/prompts/00_rdkit_projedeki_rolu_prompt.md` dosyası bu
 çalışma sırasında repo içinde bulunamadı. Notebook, kullanıcı görev metni ve
 mevcut RDKit Learning Module politika dosyaları esas alınarak üretildi.
 
+Düzeltme notu: Daha önce eksik olduğu belirtilen prompt provenance dosyası bu
+düzeltme ile eklendi. Notebook yeniden üretilmedi.
+
 ## Kontrol sonuçları
 
 | Kontrol | Sonuç | Not |

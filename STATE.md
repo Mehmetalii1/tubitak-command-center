@@ -44,6 +44,7 @@ It does not yet implement the scientific pipeline.
 - Conceptual prototype-shape map: learning/PROTOTYPE_SHAPE.md created (concept-level stages linked to gates); no code, data, counts, or source selection
 - RDKit Learning Module: nmrshiftdb2rawdata.nmredata.sd dosyasinin learning sample / pilot example olarak kullanilmasina karar verildi; bu karar final dataset secimi degildir ve veri indirme, modelleme, train/test split, evaluation veya ADR kabulu yapilmadi
 - RDKit Learning Module: 00_rdkit_projedeki_rolu.ipynb üretildi ve audit edildi; bu notebook eğitim amaçlıdır, veri indirme, modelleme, split, evaluation, final dataset seçimi veya ADR kabulü yapılmadı
+- RDKit Learning Module: 00 notebook için eksik prompt provenance dosyası geriye dönük eklendi; notebook yeniden üretilmedi ve no-go sınırları değişmedi
 - Data downloaded: No
 - Raw data changed beyond README: No
 
