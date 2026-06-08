@@ -429,6 +429,55 @@ Source selection is not ready yet. The current evidence is useful for a decision
 
 Reason: evidence is now organized enough for a structured pre-selection discussion, but source selection is not ready yet because all must-answer items remain open or partially verified. No candidate is selected by this summary.
 
+## Advisor / Owner Discussion Agenda
+
+Prepared on 2026-06-08.
+
+This agenda organizes a future Mehmetali/advisor discussion. It does not replace the detailed discussion questions below, select a source, accept this ADR, authorize data download, start the scientific pipeline, create new evidence, or record a real discussion outcome.
+
+### Meeting purpose
+
+Align on which uncertainties must be closed before a formal data source selection discussion can happen for NP-MRD and NMRShiftDB2.
+
+### What is already known
+
+- Phase 1A is still a readiness and scientific preparation phase.
+- NP-MRD and NMRShiftDB2 are the main candidates for discussion.
+- HMDB remains fallback/comparison only, not a main contender in this agenda.
+- Current evidence supports 13C NMR relevance and structure-identifier plausibility for both main candidates.
+- Overall decision readiness remains `uncertain`.
+
+### What is still uncertain
+
+- NP-MRD structure-linked usable experimental 1D 13C subset count after project filters.
+- NMRShiftDB2 measured 13C-only filtered subset count and molecule linkage.
+- NMRShiftDB2 license compatibility for repository, publication, derived dataset notes, and future software/notebook sharing.
+- Whether later label derivation, scaffold split, duplicate handling, and leakage audit can be made clean enough after source-specific filtering.
+
+### Questions to prioritize in the discussion
+
+- What minimum usable subset size or count range would make source-selection discussion meaningful?
+- Which uncertainty should be closed first: usable count, license compatibility, label feasibility, or leakage/split auditability?
+- Is NP-MRD's narrower natural-product scope acceptable if its usable subset is defensible?
+- Is NMRShiftDB2's broader chemistry scope acceptable if license and measured 13C filtering remain more complex?
+- Who should review NMRShiftDB2 license obligations before they can support source selection?
+- What evidence would be enough to move from pre-selection readiness to a formal source-selection discussion?
+
+### What should NOT be decided in this meeting
+
+- No source selection in this agenda.
+- No ADR status change.
+- No legal conclusion.
+- No scientific pipeline start.
+- No label schema or split strategy finalization.
+
+### Expected output of the meeting
+
+- A short list of evidence still required before source selection.
+- A decision on which uncertainty to investigate next.
+- Any Mehmetali/advisor concerns to record later in the blank discussion outcome template.
+- No change to ADR status unless separately approved after the meeting.
+
 ## Advisor / Owner Discussion Questions
 
 Prepared on 2026-06-08.
